@@ -1,0 +1,112 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 10rem;
+    gap: 1rem;
+
+    .wrapper_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .input_wrapper {
+            display: flex;
+
+            button{
+                outline: none;
+                border: none;
+                text-align: center;
+                transition: all 0.5s ease-in-out;
+                border: 0.0625rem solid #1f243c;
+                background-color: #1f243c;
+                cursor: pointer;
+                color: #fff;
+                font-size: 18px;
+                height: 50px;
+                font-weight: 500;
+                cursor: pointer;
+                text-transform: capitalize;
+                padding: 0.5rem 1rem;
+                border-radius: 0.5rem;
+            }
+        }
+
+        .input {
+            display: flex;
+            align-items: center;
+            padding: 10px 16px 10px 16px;
+            border: 1px solid #ced4da;
+            box-shadow:
+                0px 0px 1px 0px rgba(33, 37, 41, 0.08),
+                0px 2px 2px 0px rgba(33, 37, 41, 0.06);
+            outline: none;
+            height: 50px;
+            border-radius: 8px;
+            cursor: text;
+            width: 100%;
+
+            &:focus-within {
+                border: 1px solid #1f243c;
+            }
+
+            input {
+                width: 100%;
+                border: none;
+                outline: none;
+                height: 44px;
+                letter-spacing: 0.5008px;
+                font-size: 16px;
+
+                &::placeholder {
+                    position: relative;
+                    top: 3px;
+                    font-size: 14px;
+                }
+
+                &:focus {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .image_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        padding: 0.9rem;
+        border: 1px solid #1f243c;
+
+        .image_wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            img {
+                width: 200px;
+                height: 200px;
+                cursor: pointer;
+                box-shadow: 5px 1px 10px #1f243c;
+                transition: transform 0.3s ease-in-out;
+                transform-origin: center center;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main{
+        padding: 2rem 2rem;
+    }
+}
