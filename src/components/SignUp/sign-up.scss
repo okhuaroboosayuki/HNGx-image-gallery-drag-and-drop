@@ -192,21 +192,23 @@
 @media screen and (max-width: 900px) {
     .sign_up{
         form{
+            padding: 1rem;
             .wrapper_container{
+                width: 100%;
                 .input_wrapper{
                     .email_input{
-                        width: 25rem;
+                        width: 100%;
                     }
                 }
 
                 .input{
-                    width: 25rem
+                    width: 100%
                 }
             }
 
             .submit_btn{
-                button {
-                    width: 25rem;
+                button[type="submit"] {
+                    width: 100%;
                 }
             }
         }
