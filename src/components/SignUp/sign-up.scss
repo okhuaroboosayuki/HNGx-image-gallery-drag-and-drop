@@ -188,3 +188,27 @@
         }
     }
 }
+
+@media screen and (max-width: 900px) {
+    .sign_up{
+        form{
+            .wrapper_container{
+                .input_wrapper{
+                    .email_input{
+                        width: 25rem;
+                    }
+                }
+
+                .input{
+                    width: 25rem
+                }
+            }
+
+            .submit_btn{
+                button {
+                    width: 25rem;
+                }
+            }
+        }
+    }
+}
